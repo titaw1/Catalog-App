@@ -1,7 +1,9 @@
 //import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:katalog_toko/gamis.dart';
+import 'package:katalog_toko/baju_atasan.dart';
+import 'package:katalog_toko/celana.dart';
+import 'package:katalog_toko/dress.dart';
 import 'package:katalog_toko/hijab.dart';
 import 'package:katalog_toko/mukena.dart';
 import 'package:katalog_toko/one_set.dart';
@@ -11,7 +13,9 @@ void main() {
     '/Mukena': (BuildContext context) => new Mukena(),
     '/Hijab': (BuildContext context) => new Hijab(),
     '/OneSet': (BuildContext context) => new OneSet(),
-    '/Gamis': (BuildContext context) => new Gamis(),
+    '/Dress': (BuildContext context) => new Dress(),
+    '/Celana': (BuildContext context) => new Celana(),
+    '/BajuAtasan': (BuildContext context) => new BajuAtasan(),
   }
       //title: new Text("Tita's Store Catalogue"),
       ));
@@ -31,25 +35,19 @@ class halamanUtama extends StatelessWidget {
           "Tita's Store Catalogue",
         ),
       ),
-      body: new Container(
-        padding: new EdgeInsets.all(15.0),
-        child: new Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            new myCard(
-                Icons.collections, "Mukena", Colors.red.shade500, '/Mukena'),
-            new myCard(
-                Icons.collections, "Hijab", Colors.red.shade600, '/Hijab'),
-            new myCard(Icons.collections_outlined, "One Set",
-                Colors.red.shade200, '/OneSet'),
-            new myCard(Icons.collections, "Gamis", Colors.red, '/Gamis'),
-            new myCard(Icons.menu_book_sharp, "Tentang Katalog!",
-                Colors.red.shade300, ''),
-            new Center(
-              child: new Text("Developed by Tita Wijayanti"),
-            )
-          ],
-        ),
+      body: new GridView.count(
+        crossAxisCount: 2,
+        children: <Widget>[
+          new myCard(
+              Icons.collections, "Mukena", Colors.red.shade500, '/Mukena'),
+          new myCard(Icons.collections, "Hijab", Colors.red.shade600, '/Hijab'),
+          new myCard(Icons.collections_outlined, "One Set", Colors.red.shade200,
+              '/OneSet'),
+          new myCard(Icons.collections, "Dress", Colors.red, '/Dress'),
+          new myCard(Icons.collections, "Celana", Colors.red, '/Celana'),
+          new myCard(
+              Icons.collections, "Baju Atasan", Colors.red, '/BajuAtasan'),
+        ],
       ),
     );
   }
@@ -66,13 +64,14 @@ class myCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
+      margin: EdgeInsets.only(top: 20),
       child: new Card(
           child: new Column(
         children: <Widget>[
           new Icon(
             // Icons.collections,
             icon,
-            size: 65,
+            size: 120,
             color: color,
           ),
           new TextButton(
