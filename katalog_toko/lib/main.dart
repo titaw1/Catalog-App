@@ -1,12 +1,20 @@
 //import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:katalog_toko/gamis.dart';
+import 'package:katalog_toko/hijab.dart';
+import 'package:katalog_toko/mukena.dart';
+import 'package:katalog_toko/one_set.dart';
 
 void main() {
-  runApp(new MaterialApp(
-    home: halamanUtama(),
-    //title: new Text("Tita's Store Catalogue"),
-  ));
+  runApp(new MaterialApp(home: halamanUtama(), routes: <String, WidgetBuilder>{
+    '/Mukena': (BuildContext context) => new Mukena(),
+    '/Hijab': (BuildContext context) => new Hijab(),
+    '/OneSet': (BuildContext context) => new OneSet(),
+    '/Gamis': (BuildContext context) => new Gamis(),
+  }
+      //title: new Text("Tita's Store Catalogue"),
+      ));
 }
 
 class halamanUtama extends StatelessWidget {
@@ -28,13 +36,15 @@ class halamanUtama extends StatelessWidget {
         child: new Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            new myCard(Icons.collections, "Mukena", Colors.red.shade500),
-            new myCard(Icons.collections, "Hijab", Colors.red.shade600),
             new myCard(
-                Icons.collections_outlined, "One Set", Colors.red.shade200),
-            new myCard(Icons.collections, "Gamis", Colors.red),
+                Icons.collections, "Mukena", Colors.red.shade500, '/Mukena'),
             new myCard(
-                Icons.menu_book_sharp, "Tentang Katalog!", Colors.red.shade300),
+                Icons.collections, "Hijab", Colors.red.shade600, '/Hijab'),
+            new myCard(Icons.collections_outlined, "One Set",
+                Colors.red.shade200, '/OneSet'),
+            new myCard(Icons.collections, "Gamis", Colors.red, '/Gamis'),
+            new myCard(Icons.menu_book_sharp, "Tentang Katalog!",
+                Colors.red.shade300, ''),
             new Center(
               child: new Text("Developed by Tita Wijayanti"),
             )
@@ -46,11 +56,12 @@ class halamanUtama extends StatelessWidget {
 }
 
 class myCard extends StatelessWidget {
-  myCard(this.icon, this.text, this.color);
+  myCard(this.icon, this.text, this.color, this.route);
 
   final IconData icon;
   final String text;
   final Color color;
+  final String route;
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +76,9 @@ class myCard extends StatelessWidget {
             color: color,
           ),
           new TextButton(
-              onPressed: null,
+              onPressed: () {
+                Navigator.pushNamed(context, route);
+              },
               child: new Text(
                 text,
                 style: new TextStyle(
