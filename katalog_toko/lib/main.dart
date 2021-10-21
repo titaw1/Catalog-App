@@ -36,6 +36,7 @@ class _halamanUtamaState extends State<halamanUtama>
     return new Scaffold(
       appBar: new AppBar(
         elevation: 0,
+        backgroundColor: Colors.red.shade700,
         title: Text("Tita's Store Catalogue"),
         leading: IconButton(
           icon: new Icon(

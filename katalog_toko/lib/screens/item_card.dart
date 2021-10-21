@@ -19,6 +19,7 @@ class ItemCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
+          margin: EdgeInsets.only(top: kDefaultPadding / 2),
           padding: EdgeInsets.all(kDefaultPadding),
           decoration: BoxDecoration(
             color: product.color,
@@ -97,6 +98,7 @@ class ItemCard3 extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
+          margin: EdgeInsets.only(top: kDefaultPadding / 2),
           padding: EdgeInsets.all(kDefaultPadding),
           decoration: BoxDecoration(
             color: oneSet.color,
