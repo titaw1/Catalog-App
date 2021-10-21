@@ -13,13 +13,8 @@ class Hijab extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-              child: GridView.builder(
+              child: ListView.builder(
                 itemCount: hijabs.length,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    mainAxisSpacing: kDefaultPadding,
-                    crossAxisSpacing: kDefaultPadding,
-                    childAspectRatio: 0.75),
                 itemBuilder: (context, index) => ItemCard2(
                   hijab: hijabs[index],
                   press: () {},

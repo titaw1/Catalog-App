@@ -58,25 +58,23 @@ class ItemCard2 extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
+          margin: EdgeInsets.only(
+              top: kDefaultPadding / 2, bottom: kDefaultPadding / 2),
           padding: EdgeInsets.all(kDefaultPadding),
           decoration: BoxDecoration(
             color: hijab.color,
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(10),
           ),
-          child: Image.asset(
-            hijab.image,
+          child: new ListTile(
+            leading: new Image.asset(
+              hijab.image,
+              width: 65,
+            ),
+            title: new Text(
+              hijab.title,
+              textAlign: TextAlign.center,
+            ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),
-          child: Text(
-            hijab.title,
-            style: TextStyle(color: kTextLightColor),
-          ),
-        ),
-        Text(
-          "\Rp${hijab.price}",
-          style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ],
     );
