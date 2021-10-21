@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:katalog_toko/constants.dart';
+import 'package:katalog_toko/models/dress.dart';
 import 'package:katalog_toko/models/hijab.dart';
 import 'package:katalog_toko/models/one_set.dart';
 import 'package:katalog_toko/models/product.dart';
@@ -33,7 +34,6 @@ class ItemCard extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),
           child: Text(
             product.title,
-            style: TextStyle(color: kTextLightColor),
           ),
         ),
         Text(
@@ -72,9 +72,16 @@ class ItemCard2 extends StatelessWidget {
               hijab.image,
               width: 65,
             ),
-            title: new Text(
-              hijab.title,
-              textAlign: TextAlign.center,
+            title: Column(
+              children: <Widget>[
+                new Text(
+                  hijab.title,
+                ),
+                Text(
+                  "\Rp${hijab.price}",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                )
+              ],
             ),
           ),
         ),
@@ -112,12 +119,56 @@ class ItemCard3 extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),
           child: Text(
             oneSet.title,
-            style: TextStyle(color: kTextLightColor),
           ),
         ),
         Text(
           "\Rp${oneSet.price}",
           style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ],
+    );
+  }
+}
+
+class ItemCard4 extends StatelessWidget {
+  final Dress dress;
+  final Function press;
+  const ItemCard4({
+    Key? key,
+    required this.dress,
+    required this.press,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(
+              top: kDefaultPadding / 2, bottom: kDefaultPadding / 2),
+          padding: EdgeInsets.all(kDefaultPadding),
+          decoration: BoxDecoration(
+            color: dress.color,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: new ListTile(
+            leading: new Image.asset(
+              dress.image,
+              width: 65,
+            ),
+            title: Column(
+              children: <Widget>[
+                new Text(
+                  dress.title,
+                ),
+                Text(
+                  "\Rp${dress.price}",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+          ),
         ),
       ],
     );
