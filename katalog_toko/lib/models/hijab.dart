@@ -21,7 +21,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 1,
     title: "Aathifah Scarf",
-    price: 71250,
+    price: 35000,
     size: 12,
     description: "dummyText",
     image: "assets/images/aathifahScarf.png",
@@ -30,7 +30,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 2,
     title: "Aeesha Khimar",
-    price: 57000,
+    price: 45000,
     size: 12,
     description: "dummyText",
     image: "assets/images/aeeshaKhimar.png",
@@ -39,7 +39,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 3,
     title: "Bella Square",
-    price: 125000,
+    price: 19000,
     size: 12,
     description: "dummyText",
     image: "assets/images/bellaSquare.png",
@@ -48,7 +48,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 4,
     title: "Bergo Baby",
-    price: 68000,
+    price: 23000,
     size: 12,
     description: "dummyText",
     image: "assets/images/bergoBaby.png",
@@ -57,7 +57,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 5,
     title: "Crinkle Shawl",
-    price: 75110,
+    price: 20000,
     size: 12,
     description: "dummyText",
     image: "assets/images/crinkleShawl.png",
@@ -66,7 +66,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 6,
     title: "Diamond Scarf",
-    price: 141500,
+    price: 22500,
     size: 12,
     description: "dummyText",
     image: "assets/images/diamondScarf.png",
@@ -75,7 +75,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 7,
     title: "Jeehan Khimar",
-    price: 150000,
+    price: 39000,
     size: 12,
     description: "dummyText",
     image: "assets/images/jeehanKhimar.png",
@@ -93,7 +93,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 9,
     title: "Pashmina Ceruty",
-    price: 120000,
+    price: 30000,
     size: 12,
     description: "dummyText",
     image: "assets/images/pashminaCeruty.png",
@@ -102,7 +102,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 10,
     title: "Pashmina Plisket",
-    price: 99900,
+    price: 40000,
     size: 12,
     description: "dummyText",
     image: "assets/images/pashminaPlisket.png",
@@ -111,7 +111,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 11,
     title: "Segiempat Instan",
-    price: 150000,
+    price: 35000,
     size: 12,
     description: "dummyText",
     image: "assets/images/segiempatInstan.png",
@@ -120,7 +120,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 12,
     title: "Segiempat Lasercut",
-    price: 90250,
+    price: 30000,
     size: 12,
     description: "dummyText",
     image: "assets/images/segiempatLasercut.png",
@@ -129,7 +129,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 13,
     title: "Thisa Simple Ped",
-    price: 120000,
+    price: 27000,
     size: 12,
     description: "dummyText",
     image: "assets/images/thisaSimplePed.png",
@@ -138,7 +138,7 @@ List<Hijab> hijabs = [
   Hijab(
     id: 14,
     title: "Zareena Bergo",
-    price: 99900,
+    price: 29900,
     size: 12,
     description: "dummyText",
     image: "assets/images/zareenaBergo.png",

@@ -20,7 +20,7 @@ List<OneSet> oneSets = [
   OneSet(
     id: 1,
     title: "Andara Set",
-    price: 71250,
+    price: 69000,
     size: 12,
     description: "dummyText",
     image: "assets/images/andaraSet.png",
@@ -29,7 +29,7 @@ List<OneSet> oneSets = [
   OneSet(
     id: 2,
     title: "Aurelia Set",
-    price: 57000,
+    price: 120000,
     size: 12,
     description: "dummyText",
     image: "assets/images/aureliaSet.png",
@@ -38,7 +38,7 @@ List<OneSet> oneSets = [
   OneSet(
     id: 3,
     title: "Hailey Set",
-    price: 125000,
+    price: 119999,
     size: 12,
     description: "dummyText",
     image: "assets/images/haileySet.png",
@@ -47,7 +47,7 @@ List<OneSet> oneSets = [
   OneSet(
     id: 4,
     title: "Marmer Set",
-    price: 68000,
+    price: 66500,
     size: 12,
     description: "dummyText",
     image: "assets/images/marmerSet.png",
@@ -56,7 +56,7 @@ List<OneSet> oneSets = [
   OneSet(
     id: 5,
     title: "Nakuma Set",
-    price: 75110,
+    price: 85000,
     size: 12,
     description: "dummyText",
     image: "assets/images/nakumaSet.png",
@@ -65,7 +65,7 @@ List<OneSet> oneSets = [
   OneSet(
     id: 6,
     title: "Pajamas Set",
-    price: 141500,
+    price: 89900,
     size: 12,
     description: "dummyText",
     image: "assets/images/pajamasSet.png",
@@ -74,7 +74,7 @@ List<OneSet> oneSets = [
   OneSet(
     id: 7,
     title: "Rachelia Set",
-    price: 150000,
+    price: 153000,
     size: 12,
     description: "dummyText",
     image: "assets/images/racheliaSet.png",
@@ -83,7 +83,7 @@ List<OneSet> oneSets = [
   OneSet(
     id: 8,
     title: "Syafi Set",
-    price: 90250,
+    price: 75500,
     size: 12,
     description: "dummyText",
     image: "assets/images/syafiSet.png",
@@ -92,7 +92,7 @@ List<OneSet> oneSets = [
   OneSet(
     id: 9,
     title: "Tie Dye Set",
-    price: 120000,
+    price: 35000,
     size: 12,
     description: "dummyText",
     image: "assets/images/tieDyeSet.png",
@@ -101,7 +101,7 @@ List<OneSet> oneSets = [
   OneSet(
     id: 10,
     title: "Zarafa Set",
-    price: 99900,
+    price: 104500,
     size: 12,
     description: "dummyText",
     image: "assets/images/zarafaSet.png",
