@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:katalog_toko/constants.dart';
 import 'package:katalog_toko/screens/hal_mukena.dart' as m;
 import 'package:katalog_toko/screens/hal_hijab.dart' as h;
+import 'package:katalog_toko/screens/hal_one_set.dart' as os;
 
 void main() {
   runApp(new MaterialApp(
@@ -85,7 +86,7 @@ class _halamanUtamaState extends State<halamanUtama>
         children: <Widget>[
           new m.Mukena(),
           new h.Hijab(),
-          new m.Mukena(),
+          new os.OneSet(),
           new h.Hijab(),
           new m.Mukena(),
           new h.Hijab(),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:katalog_toko/constants.dart';
 import 'package:katalog_toko/models/hijab.dart';
+import 'package:katalog_toko/models/one_set.dart';
 import 'package:katalog_toko/models/product.dart';
 
 class ItemCard extends StatelessWidget {
@@ -75,6 +76,46 @@ class ItemCard2 extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
+        ),
+      ],
+    );
+  }
+}
+
+class ItemCard3 extends StatelessWidget {
+  final OneSet oneSet;
+  final Function press;
+  const ItemCard3({
+    Key? key,
+    required this.oneSet,
+    required this.press,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Container(
+          padding: EdgeInsets.all(kDefaultPadding),
+          decoration: BoxDecoration(
+            color: oneSet.color,
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Image.asset(
+            oneSet.image,
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),
+          child: Text(
+            oneSet.title,
+            style: TextStyle(color: kTextLightColor),
+          ),
+        ),
+        Text(
+          "\Rp${oneSet.price}",
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ],
     );

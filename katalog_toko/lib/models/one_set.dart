@@ -1,65 +1,110 @@
 import 'package:flutter/material.dart';
+import 'package:katalog_toko/constants.dart';
 
-class OneSet extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text("Baju Atasan"),
-        backgroundColor: Colors.redAccent.shade400,
-      ),
-      body: new ListView(
-        children: <Widget>[
-          // new ListOneSet("assets/images/mukena/mukena1.jpg", "One Set 1"),
-          // new ListOneSet("assets/images/mukena/mukena1.jpg", "One Set 2"),
-          // new ListOneSet("assets/images/mukena/mukena1.jpg", "One Set 3"),
-          // new ListOneSet("assets/images/mukena/mukena1.jpg", "One Set 4"),
-          // new ListOneSet("assets/images/mukena/mukena1.jpg", "One Set 5"),
-          // new ListOneSet("assets/images/mukena/mukena1.jpg", "One Set 6"),
-          // new ListOneSet("assets/images/mukena/mukena1.jpg", "One Set 7"),
-          // new ListOneSet("assets/images/mukena/mukena1.jpg", "One Set 8"),
-          // new ListOneSet("assets/images/mukena/mukena1.jpg", "One Set 9"),
-          // new ListOneSet("assets/images/mukena/mukena1.jpg", "One Set 10"),
-        ],
-      ),
-    );
-  }
+class OneSet {
+  final String image, title, description;
+  final int price, size, id;
+  final Color color;
+  OneSet({
+    required this.id,
+    required this.image,
+    required this.title,
+    required this.price,
+    required this.description,
+    required this.size,
+    required this.color,
+  });
 }
 
-class ListOneSet extends StatelessWidget {
-  ListOneSet(this.image, this.title);
-
-  final String image;
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return new Container(
-      decoration: const BoxDecoration(
-        border: Border(
-          top: BorderSide(width: 1.0, color: Colors.red),
-          left: BorderSide(width: 1.0, color: Colors.red),
-          right: BorderSide(width: 1.0, color: Colors.red),
-          bottom: BorderSide(width: 1.0, color: Colors.red),
-        ),
-      ),
-      padding: EdgeInsets.only(top: 15, bottom: 15),
-      margin: EdgeInsets.all(10),
-      child: new Column(
-        children: <Widget>[
-          new Container(
-            child: new ListTile(
-              leading: new Image.asset(
-                image,
-                width: 100,
-                height: 300,
-                fit: BoxFit.cover,
-              ),
-              title: new Text(title),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
+List<OneSet> oneSets = [
+  OneSet(
+    id: 1,
+    title: "Andara Set",
+    price: 71250,
+    size: 12,
+    description: "dummyText",
+    image: "assets/images/andaraSet.png",
+    color: Color(0xFF8D6E63),
+  ),
+  OneSet(
+    id: 2,
+    title: "Aurelia Set",
+    price: 57000,
+    size: 12,
+    description: "dummyText",
+    image: "assets/images/aureliaSet.png",
+    color: Color(0xFFFFEB3B),
+  ),
+  OneSet(
+    id: 3,
+    title: "Hailey Set",
+    price: 125000,
+    size: 12,
+    description: "dummyText",
+    image: "assets/images/haileySet.png",
+    color: Color(0xFFCFD8DC),
+  ),
+  OneSet(
+    id: 4,
+    title: "Marmer Set",
+    price: 68000,
+    size: 12,
+    description: "dummyText",
+    image: "assets/images/marmerSet.png",
+    color: Color(0xFFE1BEE7),
+  ),
+  OneSet(
+    id: 5,
+    title: "Nakuma Set",
+    price: 75110,
+    size: 12,
+    description: "dummyText",
+    image: "assets/images/nakumaSet.png",
+    color: Color(0xFFD6D6D6),
+  ),
+  OneSet(
+    id: 6,
+    title: "Pajamas Set",
+    price: 141500,
+    size: 12,
+    description: "dummyText",
+    image: "assets/images/pajamasSet.png",
+    color: Color(0xFF1976D2),
+  ),
+  OneSet(
+    id: 7,
+    title: "Rachelia Set",
+    price: 150000,
+    size: 12,
+    description: "dummyText",
+    image: "assets/images/racheliaSet.png",
+    color: Color(0xFFC5CAE9),
+  ),
+  OneSet(
+    id: 8,
+    title: "Syafi Set",
+    price: 90250,
+    size: 12,
+    description: "dummyText",
+    image: "assets/images/syafiSet.png",
+    color: Color(0xFFD7CCC8),
+  ),
+  OneSet(
+    id: 9,
+    title: "Tie Dye Set",
+    price: 120000,
+    size: 12,
+    description: "dummyText",
+    image: "assets/images/tieDyeSet.png",
+    color: Color(0xFFB2EBF2),
+  ),
+  OneSet(
+    id: 10,
+    title: "Zarafa Set",
+    price: 99900,
+    size: 12,
+    description: "dummyText",
+    image: "assets/images/zarafaSet.png",
+    color: Color(0xFF90A4AE),
+  ),
+];
