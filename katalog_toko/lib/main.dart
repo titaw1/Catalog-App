@@ -1,106 +1,96 @@
-//import 'dart:html';
-
 import 'package:flutter/material.dart';
-import 'package:katalog_toko/screens/home/home_screen.dart';
 import 'package:katalog_toko/constants.dart';
-// import 'package:katalog_toko/baju_atasan.dart';
-// import 'package:katalog_toko/celana.dart';
-// import 'package:katalog_toko/dress.dart';
-// import 'package:katalog_toko/hijab.dart';
-// import 'package:katalog_toko/mukena.dart';
-// import 'package:katalog_toko/one_set.dart';
+import 'package:katalog_toko/screens/hal_mukena.dart' as m;
+import 'package:katalog_toko/screens/hal_hijab.dart' as h;
 
 void main() {
-  runApp(halamanUtama()
-      // runApp(new MaterialApp(home: halamanUtama()
-      //, routes: <String, WidgetBuilder>{
-      //   '/Mukena': (BuildContext context) => new Mukena(),
-      //   '/Hijab': (BuildContext context) => new Hijab(),
-      //   '/OneSet': (BuildContext context) => new OneSet(),
-      //   '/Dress': (BuildContext context) => new Dress(),
-      //   '/Celana': (BuildContext context) => new Celana(),
-      //   '/BajuAtasan': (BuildContext context) => new BajuAtasan(),
-      // }
-      //title: new Text("Tita's Store Catalogue"),
-      );
+  runApp(new MaterialApp(
+    home: new halamanUtama(),
+  ));
 }
 
-class halamanUtama extends StatelessWidget {
+class halamanUtama extends StatefulWidget {
+  @override
+  _halamanUtamaState createState() => _halamanUtamaState();
+}
+
+class _halamanUtamaState extends State<halamanUtama>
+    with SingleTickerProviderStateMixin {
+  late TabController controller;
+
+  @override
+  void initState() {
+    controller = new TabController(length: 6, vsync: this);
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Tita's Store Catalogue",
-      theme: ThemeData(
-        textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+    return new Scaffold(
+      appBar: new AppBar(
+        elevation: 0,
+        title: Text("Tita's Store Catalogue"),
+        leading: IconButton(
+          icon: new Icon(
+            Icons.home,
+            color: Colors.white,
+            size: 30,
+          ),
+          onPressed: () {},
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: new Icon(
+              Icons.store_rounded,
+              color: Colors.white,
+              size: 30,
+            ),
+            onPressed: () {},
+          ),
+          SizedBox(width: kDefaultPadding / 2),
+        ],
+        bottom: new TabBar(
+          isScrollable: true,
+          controller: controller,
+          tabs: <Widget>[
+            Tab(
+              child: Text("Mukena"),
+            ),
+            Tab(
+              child: Text("Hijab"),
+            ),
+            new Tab(
+              icon: new Text("One Set"),
+            ),
+            Tab(
+              child: Text("Dress"),
+            ),
+            Tab(
+              child: Text("Celana"),
+            ),
+            Tab(
+              child: Text("Baju Atasan"),
+            ),
+          ],
+        ),
       ),
-      home: HomeScreen(),
+      body: new TabBarView(
+        controller: controller,
+        children: <Widget>[
+          new m.Mukena(),
+          new h.Hijab(),
+          new m.Mukena(),
+          new h.Hijab(),
+          new m.Mukena(),
+          new h.Hijab(),
+        ],
+      ),
     );
-    // return new Scaffold(
-    //   appBar: new AppBar(
-    //     backgroundColor: Colors.redAccent[400],
-    //     leading: new Icon(
-    //       Icons.home,
-    //       size: 45.0,
-    //     ),
-    //     title: new Text(
-    //       "Tita's Store Catalogue",
-    //     ),
-    //   ),
-    //   body: new GridView.count(
-    //     crossAxisCount: 2,
-    //     children: <Widget>[
-    //       new myCard(
-    //           Icons.collections, "Mukena", Colors.red.shade500, '/Mukena'),
-    //       new myCard(Icons.collections, "Hijab", Colors.red.shade600, '/Hijab'),
-    //       new myCard(Icons.collections_outlined, "One Set", Colors.red.shade200,
-    //           '/OneSet'),
-    //       new myCard(Icons.collections, "Dress", Colors.red, '/Dress'),
-    //       new myCard(Icons.collections, "Celana", Colors.red, '/Celana'),
-    //       new myCard(
-    //           Icons.collections, "Baju Atasan", Colors.red, '/BajuAtasan'),
-    //     ],
-    //   ),
-    // );
   }
 }
-
-// class myCard extends StatelessWidget {
-//   myCard(this.icon, this.text, this.color, this.route);
-
-//   final IconData icon;
-//   final String text;
-//   final Color color;
-//   final String route;
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return new Container(
-//       margin: EdgeInsets.only(top: 20),
-//       child: new Card(
-//           child: new Column(
-//         children: <Widget>[
-//           new Icon(
-//             // Icons.collections,
-//             icon,
-//             size: 120,
-//             color: color,
-//           ),
-//           new TextButton(
-//               onPressed: () {
-//                 Navigator.pushNamed(context, route);
-//               },
-//               child: new Text(
-//                 text,
-//                 style: new TextStyle(
-//                   fontSize: 25.0,
-//                   fontStyle: FontStyle.italic,
-//                   color: Colors.black87,
-//                 ),
-//               ))
-//         ],
-//       )),
-//     );
-//   }
-// }
