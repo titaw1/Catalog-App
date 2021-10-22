@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:katalog_toko/constants.dart';
+import 'package:katalog_toko/models/celana.dart';
 import 'package:katalog_toko/models/dress.dart';
 import 'package:katalog_toko/models/hijab.dart';
 import 'package:katalog_toko/models/one_set.dart';
@@ -169,6 +170,46 @@ class ItemCard4 extends StatelessWidget {
               ],
             ),
           ),
+        ),
+      ],
+    );
+  }
+}
+
+class ItemCard5 extends StatelessWidget {
+  final Celana celana;
+  final Function press;
+  const ItemCard5({
+    Key? key,
+    required this.celana,
+    required this.press,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(top: kDefaultPadding / 2),
+          padding: EdgeInsets.all(kDefaultPadding),
+          decoration: BoxDecoration(
+            color: celana.color,
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Image.asset(
+            celana.image,
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),
+          child: Text(
+            celana.title,
+          ),
+        ),
+        Text(
+          "\Rp${celana.price}",
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ],
     );

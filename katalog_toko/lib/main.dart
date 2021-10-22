@@ -4,6 +4,7 @@ import 'package:katalog_toko/screens/hal_mukena.dart' as m;
 import 'package:katalog_toko/screens/hal_hijab.dart' as h;
 import 'package:katalog_toko/screens/hal_one_set.dart' as os;
 import 'package:katalog_toko/screens/hal_dress.dart' as d;
+import 'package:katalog_toko/screens/hal_celana.dart' as c;
 
 void main() {
   runApp(new MaterialApp(
@@ -90,7 +91,7 @@ class _halamanUtamaState extends State<halamanUtama>
           new h.Hijab(),
           new os.OneSet(),
           new d.Dress(),
-          new m.Mukena(),
+          new c.Celana(),
           new h.Hijab(),
         ],
       ),
