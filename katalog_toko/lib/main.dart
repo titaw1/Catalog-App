@@ -5,6 +5,7 @@ import 'package:katalog_toko/screens/hal_hijab.dart' as h;
 import 'package:katalog_toko/screens/hal_one_set.dart' as os;
 import 'package:katalog_toko/screens/hal_dress.dart' as d;
 import 'package:katalog_toko/screens/hal_celana.dart' as c;
+import 'package:katalog_toko/screens/hal_baju_atasan.dart' as b;
 
 void main() {
   runApp(new MaterialApp(
@@ -38,7 +39,7 @@ class _halamanUtamaState extends State<halamanUtama>
     return new Scaffold(
       appBar: new AppBar(
         elevation: 0,
-        backgroundColor: Colors.red.shade700,
+        backgroundColor: Colors.red.shade600,
         title: Text("Tita's Store Catalogue"),
         leading: IconButton(
           icon: new Icon(
@@ -92,7 +93,7 @@ class _halamanUtamaState extends State<halamanUtama>
           new os.OneSet(),
           new d.Dress(),
           new c.Celana(),
-          new h.Hijab(),
+          new b.BajuAtasan(),
         ],
       ),
     );

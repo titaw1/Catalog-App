@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:katalog_toko/constants.dart';
+import 'package:katalog_toko/models/baju_atasan.dart';
 import 'package:katalog_toko/models/celana.dart';
 import 'package:katalog_toko/models/dress.dart';
 import 'package:katalog_toko/models/hijab.dart';
@@ -210,6 +211,51 @@ class ItemCard5 extends StatelessWidget {
         Text(
           "\Rp${celana.price}",
           style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ],
+    );
+  }
+}
+
+class ItemCard6 extends StatelessWidget {
+  final BajuAtasan bajuAtasan;
+  final Function press;
+  const ItemCard6({
+    Key? key,
+    required this.bajuAtasan,
+    required this.press,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(
+              top: kDefaultPadding / 2, bottom: kDefaultPadding / 2),
+          padding: EdgeInsets.all(kDefaultPadding),
+          decoration: BoxDecoration(
+            color: bajuAtasan.color,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: new ListTile(
+            leading: new Image.asset(
+              bajuAtasan.image,
+              width: 65,
+            ),
+            title: Column(
+              children: <Widget>[
+                new Text(
+                  bajuAtasan.title,
+                ),
+                Text(
+                  "\Rp${bajuAtasan.price}",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+          ),
         ),
       ],
     );
