@@ -9,40 +9,43 @@ import 'package:katalog_toko/models/product.dart';
 
 class ItemCard extends StatelessWidget {
   final Product product;
-  final Function press;
+  final Future Function() press;
   const ItemCard({
     Key? key,
     required this.product,
-    required this.press,
+    required Future Function() this.press,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Container(
-          margin: EdgeInsets.only(top: kDefaultPadding / 2),
-          padding: EdgeInsets.all(kDefaultPadding),
-          decoration: BoxDecoration(
-            color: product.color,
-            borderRadius: BorderRadius.circular(16),
+    return GestureDetector(
+      onTap: press,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(top: kDefaultPadding / 2),
+            padding: EdgeInsets.all(kDefaultPadding),
+            decoration: BoxDecoration(
+              color: product.color,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Image.asset(
+              product.image,
+            ),
           ),
-          child: Image.asset(
-            product.image,
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),
+            child: Text(
+              product.title,
+            ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),
-          child: Text(
-            product.title,
+          Text(
+            "\Rp${product.price}",
+            style: TextStyle(fontWeight: FontWeight.bold),
           ),
-        ),
-        Text(
-          "\Rp${product.price}",
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

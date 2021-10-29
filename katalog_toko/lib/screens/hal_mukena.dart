@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:katalog_toko/constants.dart';
 import 'package:katalog_toko/models/product.dart';
+import 'package:katalog_toko/screens/details/detail_mukena.dart';
 import 'package:katalog_toko/screens/item_card.dart';
+import 'package:flutter/src/widgets/navigator.dart';
 
 class Mukena extends StatelessWidget {
   @override
@@ -21,7 +23,14 @@ class Mukena extends StatelessWidget {
                     childAspectRatio: 0.75),
                 itemBuilder: (context, index) => ItemCard(
                   product: products[index],
-                  press: () {},
+                  press: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DetailMukena(
+                        product: products[index],
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
