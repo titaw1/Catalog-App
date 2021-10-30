@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:katalog_toko/models/product.dart';
-import 'package:katalog_toko/screens/details/body.dart';
+import 'package:katalog_toko/screens/details/body_mukena.dart';
 
 class DetailMukena extends StatelessWidget {
   final Product product;
@@ -15,7 +15,7 @@ class DetailMukena extends StatelessWidget {
         backgroundColor: product.color,
         elevation: 0,
       ),
-      body: Body(
+      body: Mukena(
         product: product,
       ),
     );

@@ -52,45 +52,48 @@ class ItemCard extends StatelessWidget {
 
 class ItemCard2 extends StatelessWidget {
   final Hijab hijab;
-  final Function press;
+  final Future Function() press;
   const ItemCard2({
     Key? key,
     required this.hijab,
-    required this.press,
+    required Future Function() this.press,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Container(
-          margin: EdgeInsets.only(
-              top: kDefaultPadding / 2, bottom: kDefaultPadding / 2),
-          padding: EdgeInsets.all(kDefaultPadding),
-          decoration: BoxDecoration(
-            color: hijab.color,
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: new ListTile(
-            leading: new Image.asset(
-              hijab.image,
-              width: 65,
+    return GestureDetector(
+      onTap: press,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(
+                top: kDefaultPadding / 2, bottom: kDefaultPadding / 2),
+            padding: EdgeInsets.all(kDefaultPadding),
+            decoration: BoxDecoration(
+              color: hijab.color,
+              borderRadius: BorderRadius.circular(10),
             ),
-            title: Column(
-              children: <Widget>[
-                new Text(
-                  hijab.title,
-                ),
-                Text(
-                  "\Rp${hijab.price}",
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                )
-              ],
+            child: new ListTile(
+              leading: new Image.asset(
+                hijab.image,
+                width: 65,
+              ),
+              title: Column(
+                children: <Widget>[
+                  new Text(
+                    hijab.title,
+                  ),
+                  Text(
+                    "\Rp${hijab.price}",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  )
+                ],
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
