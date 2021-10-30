@@ -4,23 +4,23 @@ mini-project-titaw1 created by GitHub Classroom
 ## Gambaran Aplikasi
 ### Halaman Utama
 
-![](img\utama.png)
+![](img/utama.png)
 
 ### Halaman Kategori Mukena
 
-![](img\mukena.png)
+![](img/mukena.png)
 
 ### Halaman Kategori Hijab
 
-![](img\hijab.png)
+![](img/hijab.png)
 
 ### Halaman Detail Mukena 
 
-![](img\detailMukena.png)
+![](img/detailMukena.png)
 
 ### Halaman Detail Hijab
 
-![](img\detailHijab.png)
+![](img/detailHijab.png)
 
 ## Link Youtube
 https://youtu.be/dTNzjXEnrLA
