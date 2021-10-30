@@ -26,7 +26,7 @@ List<Product> products = [
     description: "Mukena Rayon berbahan rayon motif print plus tas",
     image: "assets/images/mukenaRayon.png",
     color: Color(0xFFF06292),
-    colorType: "Cream, Tosca, Pink,\n Merah, Ungu",
+    colorType: "Cream, Tosca, Pink,\nMerah, Ungu",
   ),
   Product(
     id: 2,
@@ -36,7 +36,7 @@ List<Product> products = [
     description: "Mukena Jumbo Hyget menggunakan bahan Hyget Premium",
     image: "assets/images/mukenaJumbo.png",
     color: Color(0xFFD7CCC8),
-    colorType: "Lavender, Maroon, Putih,\n Navy, Kunyit",
+    colorType: "Lavender, Maroon, Putih,\nNavy, Kunyit",
   ),
   Product(
     id: 3,
@@ -47,7 +47,7 @@ List<Product> products = [
         "Mukena katun rosella terbuat dari bahan katun Rosella jatuh dan tidak kusut, tidak menerawang, lembut, adem,  berwarna pastel dan bordir yang cantik, dan tentu saja nyaman di pakai.",
     image: "assets/images/mukenaKatunRosella.png",
     color: Color(0xFFB9F6CA),
-    colorType: "Grey, White, Khaky,\n Maroon, Brown",
+    colorType: "Grey, White, Khaky,\nMaroon, Brown",
   ),
   Product(
     id: 4,
@@ -58,7 +58,7 @@ List<Product> products = [
         "Mukena Katun Tie Dye berbahan katun Rayon, memakai rempel di bagian atasan, karakteristik bahan dingin, lembut, tidak mudah lusut, nyaman digunakan sehari-hari",
     image: "assets/images/mukenaKatunTieDye.png",
     color: Color(0xFF80D8FF),
-    colorType: "Tosca, Maroon, Salem,\n Coksu",
+    colorType: "Tosca, Maroon, Salem,\nCoksu",
   ),
   Product(
     id: 5,
@@ -69,7 +69,7 @@ List<Product> products = [
         "Bahan katun. Cocok buat traveling pouchnya ada talinya di sudut atas biar gampang dibawa kemana mana maupun sehari hari ,bahan juga adem ,cocok juga sebagai hadiah buat ibu kita tercinta sodara atau sahabat dekat,,",
     image: "assets/images/mukenaRenda.png",
     color: Color(0xFFFF4081),
-    colorType: "Salem, Rouge, Ice blue,\n Light brown, Navy",
+    colorType: "Salem, Rouge, Ice blue,\nLight brown, Navy",
   ),
   Product(
     id: 6,
@@ -80,7 +80,7 @@ List<Product> products = [
         "Mukena siti khadijah full kd / mukena fatimah /mukena ala syahrini Bahan katun mikro (halus lembut dan adem tidak berbulu) besar dihiasi bordir depan yg panjang",
     image: "assets/images/mukenaFatimah.png",
     color: Color(0xFFD50000),
-    colorType: "Maroon, Mocca, Greentea,\n Putih",
+    colorType: "Maroon, Mocca, Greentea,\nPutih",
   ),
   Product(
     id: 7,
@@ -91,7 +91,7 @@ List<Product> products = [
         "Bahan Katun Mikro. Serat lebih tebal dan padat dari katun biasa sehingga tidak tembus pandang/nerawang. Tekstur halus dan lembut sehingga nyaman dipakai, perawatan mudah Bersifat kuat dan tahan lama, cocok dipakai di segala cuaca, tidak menimbulkan iritasi/alergi (gatal-gatal)",
     image: "assets/images/mukenaShireen.png",
     color: Color(0xFFFFA726),
-    colorType: "Grey, Emerald, Navy,\n Hitam, Coksu",
+    colorType: "Grey, Emerald, Navy,\nHitam, Coksu",
   ),
   Product(
     id: 8,
@@ -102,7 +102,7 @@ List<Product> products = [
         "Mukena bordir yang lagi trend, bahan katun yang halus lembut nyaman di pakai dan tidak kusut  dan di hiasi dengan renda yang sangat cantik dan mewah. Bahan Katun Mikro (Lembut, tebal. adem dan tidak nerawang)",
     image: "assets/images/mukenaBordir.png",
     color: Color(0xFF795548),
-    colorType: "Bordir Coklat, Bordir Turkis,\n Bordir Biru",
+    colorType: "Bordir Coklat, Bordir Turkis,\nBordir Biru",
   ),
   Product(
     id: 9,
@@ -113,7 +113,7 @@ List<Product> products = [
         "Mukenah anak dari Kakha series terbuat dari bahan Rayon Twill premium. Bahan rayon twill ini tidak tebal, kainnya lebih ringan daripada katun lainnya sehingga sangat enteng untuk dipakai saat sholat. Bahan mukenah anak ini juga sangat halus dan lembut, sehingga anak tetap merasa sejuk meskipun sholat di siang maupun malam hari.",
     image: "assets/images/mukenaAnak1.png",
     color: Color(0xFF43A047),
-    colorType: "Terracotta, Army, Nude,\n Hijau Mint",
+    colorType: "Terracotta, Army, Nude,\nHijau Mint",
   ),
   Product(
     id: 10,
@@ -124,6 +124,6 @@ List<Product> products = [
         "Mukena Anak Daydream bahan katun rayon. Satu set mukena atasan + bawahan + tas",
     image: "assets/images/mukenaAnak2.png",
     color: Color(0xFF42A5F5),
-    colorType: "Lilac, Biru, Pink,\n Greentea, Peach",
+    colorType: "Lilac, Biru, Pink,\nGreentea, Peach",
   ),
 ];

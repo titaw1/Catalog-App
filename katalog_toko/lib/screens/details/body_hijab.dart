@@ -42,28 +42,28 @@ class HijabDetail extends StatelessWidget {
                                 Text(
                                   "Warna : \n",
                                 ),
-                                // Container(
-                                //   child: Text(hijab),
-                                //   padding: EdgeInsets.all(2.5),
-                                // ),
+                                Container(
+                                  child: Text(hijab.colorType),
+                                  padding: EdgeInsets.all(2.5),
+                                ),
                               ],
                             ),
                           ),
-                          // Expanded(
-                          //   child: RichText(
-                          //     text: TextSpan(
-                          //       style: TextStyle(color: kTextColor),
-                          //       children: [
-                          //         TextSpan(text: "Ukuran : \n\n"),
-                          //         TextSpan(
-                          //             text: hijab.size,
-                          //             style: Theme.of(context)
-                          //                 .textTheme
-                          //                 .headline6),
-                          //       ],
-                          //     ),
-                          //   ),
-                          // )
+                          Expanded(
+                            child: RichText(
+                              text: TextSpan(
+                                style: TextStyle(color: kTextColor),
+                                children: [
+                                  TextSpan(text: "Ukuran : \n\n"),
+                                  TextSpan(
+                                      text: hijab.size,
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .headline6),
+                                ],
+                              ),
+                            ),
+                          )
                         ],
                       ),
                       Padding(
