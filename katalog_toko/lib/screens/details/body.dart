@@ -79,16 +79,6 @@ class Body extends StatelessWidget {
                             vertical: kDefaultPadding),
                         child: Row(
                           children: <Widget>[
-                            // Container(
-                            //   height: 50,
-                            //   width: 58,
-                            //   decoration: BoxDecoration(
-                            //     borderRadius: BorderRadius.circular(18),
-                            //     border: Border.all(
-                            //       color: product.color,
-                            //     ),
-                            //   ),
-                            // ),
                             Expanded(
                               child: SizedBox(
                                 height: 50,
