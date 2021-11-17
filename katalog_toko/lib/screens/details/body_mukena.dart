@@ -1,8 +1,7 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:katalog_toko/constants.dart';
 import 'package:katalog_toko/models/product.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Mukena extends StatelessWidget {
   final Product product;

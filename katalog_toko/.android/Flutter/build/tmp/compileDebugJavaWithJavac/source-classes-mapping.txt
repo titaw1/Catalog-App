@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/example/katalog_toko/BuildConfig.java
- com.example.katalog_toko.BuildConfig
