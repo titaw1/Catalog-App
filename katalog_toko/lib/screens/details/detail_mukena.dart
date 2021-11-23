@@ -10,9 +10,9 @@ class DetailMukena extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: product.color,
+      backgroundColor: Color(int.parse(product.color)),
       appBar: AppBar(
-        backgroundColor: product.color,
+        backgroundColor: Color(int.parse(product.color)),
         elevation: 0,
       ),
       body: Mukena(

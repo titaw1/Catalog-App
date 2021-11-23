@@ -86,7 +86,7 @@ class Mukena extends StatelessWidget {
                                 child: FlatButton(
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(18)),
-                                  color: product.color,
+                                  color: Color(int.parse(product.color)),
                                   onPressed: () {},
                                   child: Text(
                                     "Beli Sekarang".toUpperCase(),
