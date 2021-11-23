@@ -242,7 +242,7 @@ class ItemCard6 extends StatelessWidget {
               top: kDefaultPadding / 2, bottom: kDefaultPadding / 2),
           padding: EdgeInsets.all(kDefaultPadding),
           decoration: BoxDecoration(
-            color: bajuAtasan.color,
+            color: Color(int.parse(bajuAtasan.color)),
             borderRadius: BorderRadius.circular(10),
           ),
           child: new ListTile(
