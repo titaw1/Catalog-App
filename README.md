@@ -14,6 +14,10 @@ mini-project-titaw1 created by GitHub Classroom
 
 ![](img/hijab.png)
 
+### Halaman Kategori Baju Atasan
+
+![](img/bajuAtasan.png)
+
 ### Halaman Detail Mukena 
 
 ![](img/detailMukena.png)
@@ -24,3 +28,6 @@ mini-project-titaw1 created by GitHub Classroom
 
 ## Link Youtube
 https://youtu.be/dTNzjXEnrLA
+
+## Link Repository Database/db.json
+https://github.com/titaw1/database/blob/main/db.json
