@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:katalog_toko/constants.dart';
 
 class Celana {
-  final String image, title, description;
-  final int price, size, id;
-  final Color color;
+  final String image, title, description, price, color;
+  final int size, id;
+
   Celana({
     required this.id,
     required this.image,
@@ -14,133 +14,12 @@ class Celana {
     required this.size,
     required this.color,
   });
+  factory Celana.fromJson(Map<String, dynamic> json) => Celana(
+      id: json['id'],
+      image: json['image'],
+      title: json['title'],
+      price: json['price'],
+      description: json['description'],
+      size: json['size'],
+      color: json['color']);
 }
-
-List<Celana> celanas = [
-  Celana(
-    id: 1,
-    title: "Baggy Pants",
-    price: 52000,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/baggyPants.png",
-    color: Color(0xFFF06292),
-  ),
-  Celana(
-    id: 2,
-    title: "Boyfriends Jeans Jumbo",
-    price: 94000,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/boyfriendJumbo.png",
-    color: Color(0xFFCFD8DC),
-  ),
-  Celana(
-    id: 3,
-    title: "Cutbray Jeans",
-    price: 65800,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/cutbrayJeans.png",
-    color: Color(0xFFB3E5FC),
-  ),
-  Celana(
-    id: 4,
-    title: "Haruka Pants",
-    price: 47200,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/harukaPants.png",
-    color: Color(0xFFD7CCC8),
-  ),
-  Celana(
-    id: 5,
-    title: "HW Jeans",
-    price: 59500,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/hwJeans.png",
-    color: Color(0xFF90CAF9),
-  ),
-  Celana(
-    id: 6,
-    title: "HW Kulot Jeans",
-    price: 147350,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/hwKulotJeans.png",
-    color: Color(0xFF78909C),
-  ),
-  Celana(
-    id: 7,
-    title: "Korduroi Pants",
-    price: 45000,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/korduroiPants.png",
-    color: Color(0xFF8D6E63),
-  ),
-  Celana(
-    id: 8,
-    title: "Kulot Bahan",
-    price: 64000,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/kulot.png",
-    color: Color(0xFF795548),
-  ),
-  Celana(
-    id: 9,
-    title: "Kulot Linen",
-    price: 98000,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/kulotLinen.png",
-    color: Color(0xFFA1887F),
-  ),
-  Celana(
-    id: 10,
-    title: "Legging Soft",
-    price: 25000,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/leggingSoft.png",
-    color: Color(0xFFB0BEC5),
-  ),
-  Celana(
-    id: 11,
-    title: "Loose Jeans",
-    price: 65000,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/looseJeans.png",
-    color: Color(0xFF8D6E63),
-  ),
-  Celana(
-    id: 12,
-    title: "Retro Jeans",
-    price: 94000,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/retroJeans.png",
-    color: Color(0xFF546E7A),
-  ),
-  Celana(
-    id: 13,
-    title: "Tartan Pants",
-    price: 78000,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/tartanPants.png",
-    color: Color(0xFF3E2723),
-  ),
-  Celana(
-    id: 14,
-    title: "Wide Pants",
-    price: 199000,
-    size: 12,
-    description: "dummyText",
-    image: "assets/images/widePants.png",
-    color: Color(0xFF795548),
-  ),
-];

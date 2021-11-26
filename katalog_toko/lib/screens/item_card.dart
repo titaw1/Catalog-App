@@ -201,7 +201,7 @@ class ItemCard5 extends StatelessWidget {
           margin: EdgeInsets.only(top: kDefaultPadding / 2),
           padding: EdgeInsets.all(kDefaultPadding),
           decoration: BoxDecoration(
-            color: celana.color,
+            color: Color(int.parse(celana.color)),
             borderRadius: BorderRadius.circular(16),
           ),
           child: Image.asset(
