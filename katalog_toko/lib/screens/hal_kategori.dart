@@ -6,6 +6,7 @@ import 'package:katalog_toko/screens/hal_one_set.dart' as os;
 import 'package:katalog_toko/screens/hal_dress.dart' as d;
 import 'package:katalog_toko/screens/hal_celana.dart' as c;
 import 'package:katalog_toko/screens/hal_baju_atasan.dart' as b;
+import 'package:katalog_toko/screens/search.dart';
 
 class halamanKategori extends StatefulWidget {
   @override
@@ -52,7 +53,9 @@ class _halamanKategoriState extends State<halamanKategori>
               color: Colors.white,
               size: 30,
             ),
-            onPressed: () {},
+            onPressed: () {
+              showSearch(context: context, delegate: Searching());
+            },
           ),
           SizedBox(width: kDefaultPadding / 2),
         ],
