@@ -11,9 +11,9 @@ class DetailHijab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: hijab.color,
+      backgroundColor: Color(int.parse(hijab.color)),
       appBar: AppBar(
-        backgroundColor: hijab.color,
+        backgroundColor: Color(int.parse(hijab.color)),
         elevation: 0,
       ),
       body: HijabDetail(

@@ -71,7 +71,7 @@ class ItemCard2 extends StatelessWidget {
                 top: kDefaultPadding / 2, bottom: kDefaultPadding / 2),
             padding: EdgeInsets.all(kDefaultPadding),
             decoration: BoxDecoration(
-              color: hijab.color,
+              color: Color(int.parse(hijab.color)),
               borderRadius: BorderRadius.circular(10),
             ),
             child: new ListTile(
