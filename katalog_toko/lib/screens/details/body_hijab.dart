@@ -85,7 +85,7 @@ class HijabDetail extends StatelessWidget {
                                 child: FlatButton(
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(18)),
-                                  color: hijab.color,
+                                  color: Color(int.parse(hijab.color)),
                                   onPressed: () {},
                                   child: Text(
                                     "Beli Sekarang".toUpperCase(),
