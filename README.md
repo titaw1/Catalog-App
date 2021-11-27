@@ -27,7 +27,7 @@ mini-project-titaw1 created by GitHub Classroom
 ![](img/detailHijab.png)
 
 ## Link Youtube
-https://youtu.be/dTNzjXEnrLA
+https://youtu.be/jnTfYhI_23A
 
 ## Link Repository Database/db.json
 https://github.com/titaw1/database/blob/main/db.json
