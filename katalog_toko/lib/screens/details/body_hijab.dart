@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:katalog_toko/constants.dart';
 import 'package:katalog_toko/models/hijab.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HijabDetail extends StatelessWidget {
   final Hijab hijab;
 
   const HijabDetail({Key? key, required this.hijab}) : super(key: key);
+
+  void _launchURL(String _url) async {
+    if (!await launch(_url)) throw 'Could not launch $_url';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +91,8 @@ class HijabDetail extends StatelessWidget {
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(18)),
                                   color: Color(int.parse(hijab.color)),
-                                  onPressed: () {},
+                                  onPressed: () => _launchURL(
+                                      "https://api.whatsapp.com/send?phone=6281xxxxxxxxx&text=~%20Silakan%20isi%20format%20pemesanan%20dengan%20lengkap%20~%20%0ANama%20:%20%0AAlamat%20:%20%0ANama%20Barang%20:%20%0AWarna%20:%20%0AJumlah%20:%20%0A~%20Selamat%20Berbelanja%20~"),
                                   child: Text(
                                     "Beli Sekarang".toUpperCase(),
                                     style: TextStyle(

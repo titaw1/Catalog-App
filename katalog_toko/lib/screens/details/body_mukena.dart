@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:katalog_toko/constants.dart';
 import 'package:katalog_toko/models/product.dart';
-// import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Mukena extends StatelessWidget {
   final Product product;
 
   const Mukena({Key? key, required this.product}) : super(key: key);
+
+  void _launchURL(String _url) async {
+    if (!await launch(_url)) throw 'Could not launch $_url';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -87,7 +91,8 @@ class Mukena extends StatelessWidget {
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(18)),
                                   color: Color(int.parse(product.color)),
-                                  onPressed: () {},
+                                  onPressed: () => _launchURL(
+                                      "https://api.whatsapp.com/send?phone=6281xxxxxxxxx&text=~%20Silakan%20isi%20format%20pemesanan%20dengan%20lengkap%20~%20%0ANama%20:%20%0AAlamat%20:%20%0ANama%20Barang%20:%20%0AWarna%20:%20%0AJumlah%20:%20%0A~%20Selamat%20Berbelanja%20~"),
                                   child: Text(
                                     "Beli Sekarang".toUpperCase(),
                                     style: TextStyle(

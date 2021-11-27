@@ -19,70 +19,127 @@
 16-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:9:5-66
 16-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:9:22-64
 17
-18    <application
-18-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:11:5-38:19
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.1.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\d67cd79abd1ca209502f51c69d23182b\core-1.1.0\AndroidManifest.xml:24:18-86
-20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-21-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:13:9-43
-22        android:label="katalog_toko" >
-22-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:12:9-37
-23        <activity
-23-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:14:9-32:20
-24            android:name="com.example.katalog_toko.host.MainActivity"
-24-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:15:13-41
-25            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-25-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:18:13-163
-26            android:hardwareAccelerated="true"
-26-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:19:13-47
-27            android:launchMode="singleTop"
-27-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:16:13-43
-28            android:theme="@style/LaunchTheme"
-28-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:17:13-47
-29            android:windowSoftInputMode="adjustResize" >
-29-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:20:13-55
-30
-31            <!--
-32                 This keeps the window background of the activity showing
-33                 until Flutter renders its first frame. It can be removed if
-34                 there is no splash screen (such as the default splash screen
-35                 defined in @style/LaunchTheme).
-36            -->
-37            <meta-data
-37-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:25:13-27:40
-38                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
-38-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:26:17-82
-39                android:value="true" />
-39-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:27:17-37
-40
-41            <intent-filter>
-41-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:28:13-31:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:29:17-68
-42-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:29:25-66
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:30:17-76
-44-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:30:27-74
-45            </intent-filter>
-46        </activity>
-47        <!--
-48             Don't delete the meta-data below.
-49             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-50        -->
-51        <meta-data
-51-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:35:9-37:33
-52            android:name="flutterEmbedding"
-52-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:36:13-44
-53            android:value="2" />
-53-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:37:13-30
-54        <meta-data
-54-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-18:38
-55            android:name="flutterProjectType"
-55-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-46
-56            android:value="module" />
-56-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-35
-57    </application>
+18    <queries>
+18-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-41:15
+19
+20        <!-- If your app opens https URLs -->
+21        <intent>
+21-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-22:18
+22            <action android:name="android.intent.action.VIEW" />
+22-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-65
+22-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:21-62
+23
+24            <data android:scheme="https" />
+24-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-44
+24-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:19-41
+25        </intent>
+26        <!-- If your app makes calls -->
+27        <intent>
+27-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-28:18
+28            <action android:name="android.intent.action.DIAL" />
+28-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-65
+28-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:21-62
+29
+30            <data android:scheme="tel" />
+30-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-44
+30-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:19-41
+31        </intent>
+32        <!-- If your sends SMS messages -->
+33        <intent>
+33-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-34:18
+34            <action android:name="android.intent.action.SENDTO" />
+34-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-67
+34-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:21-64
+35
+36            <data android:scheme="smsto" />
+36-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-44
+36-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:19-41
+37        </intent>
+38        <!-- If your app sends emails -->
+39        <intent>
+39-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-40:18
+40            <action android:name="android.intent.action.SEND" />
+40-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-65
+40-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:21-62
+41
+42            <data android:mimeType="*/*" />
+42-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-44
+43        </intent>
+44    </queries>
+45
+46    <application
+46-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:11:5-38:19
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.1.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\d67cd79abd1ca209502f51c69d23182b\core-1.1.0\AndroidManifest.xml:24:18-86
+48        android:debuggable="true"
+49        android:icon="@mipmap/ic_launcher"
+49-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:13:9-43
+50        android:label="katalog_toko" >
+50-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:12:9-37
+51        <activity
+51-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:14:9-32:20
+52            android:name="com.example.katalog_toko.host.MainActivity"
+52-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:15:13-41
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:18:13-163
+54            android:hardwareAccelerated="true"
+54-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:19:13-47
+55            android:launchMode="singleTop"
+55-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:16:13-43
+56            android:theme="@style/LaunchTheme"
+56-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:17:13-47
+57            android:windowSoftInputMode="adjustResize" >
+57-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:20:13-55
 58
-59</manifest>
+59            <!--
+60                 This keeps the window background of the activity showing
+61                 until Flutter renders its first frame. It can be removed if
+62                 there is no splash screen (such as the default splash screen
+63                 defined in @style/LaunchTheme).
+64            -->
+65            <meta-data
+65-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:25:13-27:40
+66                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
+66-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:26:17-82
+67                android:value="true" />
+67-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:27:17-37
+68
+69            <intent-filter>
+69-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:28:13-31:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:29:17-68
+70-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:29:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:30:17-76
+72-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:30:27-74
+73            </intent-filter>
+74        </activity>
+75        <!--
+76             Don't delete the meta-data below.
+77             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+78        -->
+79        <meta-data
+79-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:35:9-37:33
+80            android:name="flutterEmbedding"
+80-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:36:13-44
+81            android:value="2" />
+81-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\app\src\main\AndroidManifest.xml:37:13-30
+82        <meta-data
+82-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:9-46:38
+83            android:name="flutterProjectType"
+83-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:13-46
+84            android:value="module" />
+84-->[:flutter] C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:13-35
+85
+86        <activity
+86-->[:url_launcher] C:\Users\HP\Documents\flutter\.pub-cache\hosted\pub.dartlang.org\url_launcher-6.0.15\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+87            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+87-->[:url_launcher] C:\Users\HP\Documents\flutter\.pub-cache\hosted\pub.dartlang.org\url_launcher-6.0.15\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+88            android:exported="false"
+88-->[:url_launcher] C:\Users\HP\Documents\flutter\.pub-cache\hosted\pub.dartlang.org\url_launcher-6.0.15\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+89            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+89-->[:url_launcher] C:\Users\HP\Documents\flutter\.pub-cache\hosted\pub.dartlang.org\url_launcher-6.0.15\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+90    </application>
+91
+92</manifest>

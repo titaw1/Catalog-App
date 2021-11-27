@@ -1,0 +1,89 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!-- Generated file. Do not edit. -->
+3<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+4    xmlns:tools="http://schemas.android.com/tools"
+5    package="com.example.katalog_toko"
+6    android:versionCode="1"
+7    android:versionName="1.0.0" >
+8
+9    <uses-sdk
+10        android:minSdkVersion="16"
+10-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml
+11        android:targetSdkVersion="30" />
+11-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:5:3-64
+13-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:5:20-62
+14
+15    <queries>
+15-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:16:3-37:13
+16
+17        <!-- If your app opens https URLs -->
+18        <intent>
+18-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:18:5-21:14
+19            <action android:name="android.intent.action.VIEW" />
+19-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:19:7-59
+19-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:19:15-56
+20
+21            <data android:scheme="https" />
+21-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:20:7-38
+21-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:20:13-35
+22        </intent>
+23        <!-- If your app makes calls -->
+24        <intent>
+24-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:23:5-26:14
+25            <action android:name="android.intent.action.DIAL" />
+25-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:24:7-59
+25-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:24:15-56
+26
+27            <data android:scheme="tel" />
+27-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:20:7-38
+27-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:20:13-35
+28        </intent>
+29        <!-- If your sends SMS messages -->
+30        <intent>
+30-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:28:5-31:14
+31            <action android:name="android.intent.action.SENDTO" />
+31-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:29:7-61
+31-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:29:15-58
+32
+33            <data android:scheme="smsto" />
+33-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:20:7-38
+33-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:20:13-35
+34        </intent>
+35        <!-- If your app sends emails -->
+36        <intent>
+36-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:33:5-36:14
+37            <action android:name="android.intent.action.SEND" />
+37-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:34:7-59
+37-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:34:15-56
+38
+39            <data android:mimeType="*/*" />
+39-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:20:7-38
+39-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:35:13-35
+40        </intent>
+41    </queries>
+42
+43    <application tools:node="merge" >
+43-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:6:3-15:17
+43-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:6:16-34
+44        <meta-data
+44-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:7:5-9:32
+45            android:name="flutterProjectType"
+45-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:8:7-40
+46            android:value="module" />
+46-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:9:7-29
+47        <!--
+48           Don't delete the meta-data below.
+49           It is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+50        -->
+51        <meta-data
+51-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:12:7-14:31
+52            android:name="flutterEmbedding"
+52-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:13:11-42
+53            android:value="2" />
+53-->C:\xampp\htdocs\mini-project2-titaw1\katalog_toko\.android\Flutter\src\main\AndroidManifest.xml:14:11-28
+54    </application>
+55
+56</manifest>

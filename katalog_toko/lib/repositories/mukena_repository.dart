@@ -6,7 +6,7 @@ class ProductRepository {
   List<Product> result = [];
   Future getProduct({String? query}) async {
     var response =
-        await http.get(Uri.parse('http://192.168.0.114:3000/product'));
+        await http.get(Uri.parse('http://192.168.0.111:3000/product'));
     if (response.statusCode == 200) {
       List data = json.decode(response.body);
       result = data.map((value) => Product.fromJson(value)).toList();
